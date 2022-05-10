@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">TravelBliss</string>
+    <string name="travelbliss">TravelBliss</string>
+    <string name="view_all">View All</string>
+    <string name="add_new">Add New</string>
+    <string name="sign_out">SIGN OUT</string>
+    <string name="login">Login</string>
+    <string name="todo">TODO</string>
+    <string name="title_activity_home">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="default_lat">00.000000</string>
+    <string name="default_lng">00.000000</string>
+    <string name="enable_gps">Enable GPS</string>
+    <string name="required_for_this_app">Required for this app</string>
+    <string name="enable_now">Enable Now</string>
+    <string name="location_permission_not_granted">Location Permission not granted</string>
+</resources>

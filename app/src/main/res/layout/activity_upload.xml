@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff0f0"
+    android:fontFamily="@font/firasans"
+    tools:context="com.assignment.travelbliss.view.UploadActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:indeterminateBehavior="cycle"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Location Details"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#EF0739"
+                android:fontFamily="@font/firasb"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@color/white"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="10dp"
+                android:inputType="text"
+                android:hint="Name"
+                android:textColorHint="#545454"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/descriptionEditText"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:inputType="text"
+                android:hint="Description"
+                android:background="@color/white"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#545454"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/ratingEditText"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:inputType="text"
+                android:hint="Give a Rating"
+                android:background="@color/white"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#545454"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/addressTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:text="You are Currently at"
+                android:fontFamily="@font/firasb"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+
+                 />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginLeft="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/latTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:text="lat"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="#545454"/>
+                <TextView
+                    android:id="@+id/lngTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="lng"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="#545454"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/button_choose_image"
+                    android:text="Choose Image"
+                    app:backgroundTint="#020147"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/chooseImageView"
+                    android:layout_width="match_parent"
+                    android:background="#fff0f0"
+                    android:layout_height="180dp"/>
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/upLoadBtn"
+                android:layout_margin="16dp"
+                android:text="Upload"
+                app:backgroundTint="#EF0739"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_nav_menu"
+        android:background="@color/white"
+        app:itemIconTint="#FF0000"
+        app:labelVisibilityMode="unlabeled"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_baseline_person_24"
+            android:layout_marginLeft="24dp"
+            android:onClick="goProfile"
+            />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_baseline_home_24"
+            android:onClick="goHome"
+
+            />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_baseline_add_circle_24"
+            android:backgroundTint="#454545"
+            android:gravity="right"
+            android:layout_marginRight="24dp"
+            android:layout_gravity="right"
+            android:onClick="AddLoc"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "485303411562",
+    "firebase_url": "https://travelbliss-87f33-default-rtdb.firebaseio.com",
+    "project_id": "travelbliss-87f33",
+    "storage_bucket": "travelbliss-87f33.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485303411562:android:33c4736bb7dee15fb1fb13",
+        "android_client_info": {
+          "package_name": "com.assignment.travelbliss"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "485303411562-97bk00qhorgtjucm1oj06nshbvegh66b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnjrRJ32E-Jy8NEv4JA6Di4MqiqRcT6zs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "485303411562-97bk00qhorgtjucm1oj06nshbvegh66b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
